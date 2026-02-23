@@ -1,127 +1,45 @@
 # 🚢 Titanic Survival Prediction
 
-Predicting passenger survival on the Titanic using exploratory data analysis (EDA) and machine learning.
+An end-to-end machine learning project analyzing passenger survival on the Titanic using exploratory data analysis (EDA) and predictive modeling.
 
 ---
 
-## 📌 Project Overview
+## 📌 Objective
 
-This project analyzes the famous **Titanic dataset** to understand which factors influenced passenger survival and builds a predictive model based on those insights.
-
-We explore key features such as gender, passenger class, age, fare, and port of embarkation to uncover meaningful patterns.
-
----
-
-## 📊 Dataset Summary
-
-* 👥 Total Passengers: 891
-* ✅ Survival Rate: **38.38%**
-* ❌ Non-Survival Rate: **61.62%**
-
-### 🔹 Gender Distribution
-
-* Male: 577
-* Female: 314
-
-### 🔹 Passenger Class
-
-* 1st Class: 216
-* 2nd Class: 184
-* 3rd Class: 491
-
-### 🔹 Embarked Port
-
-* Southampton (S): 646
-* Cherbourg (C): 168
-* Queenstown (Q): 77
+* Explore survival patterns in the dataset
+* Identify key predictive features
+* Build and evaluate machine learning models
 
 ---
 
-## 🔍 Key Insights
+## 📊 Dataset
 
-### 👩‍🦰 Survival by Gender
-
-* Female Survival Rate: **74.2%**
-* Male Survival Rate: **18.9%**
-
-➡️ Gender was the strongest predictor of survival.
+* 891 passengers
+* Survival Rate: **38.38%**
+* Key features: Sex, Pclass, Age, Fare, Embarked, Family info
 
 ---
 
-### 🎩 Survival by Passenger Class
+## 🔍 Key EDA Insights
 
-* 1st Class: **63.0%**
-* 2nd Class: **47.3%**
-* 3rd Class: **24.2%**
+* **Gender** is the strongest predictor (female survival significantly higher).
+* **Passenger class** strongly affects survival.
+* **Fare** positively correlates with survival.
+* Age and family features show weaker linear impact.
 
-➡️ Higher class passengers had significantly better survival chances.
-
----
-
-### 🌍 Survival by Port
-
-* Cherbourg (C): **55.4%**
-* Queenstown (Q): **39.0%**
-* Southampton (S): **33.9%**
+📄 Detailed analysis: `EDA_Report.md`
 
 ---
 
-### 💰 Fare & Survival
+## 🧠 Modeling
 
-* Fare has a **positive correlation (0.25)** with survival.
-* Higher ticket prices generally increased survival probability.
-
----
-
-### 👶 Age & Survival
-
-* Average Age (Survived): 28.29
-* Average Age (Not Survived): 30.03
-
-➡️ Age had weak correlation with survival (-0.06).
+* Data preprocessing & feature engineering
+* Logistic Regression
+* Random Forest
+* Evaluation using Accuracy & ROC-AUC
 
 ---
 
-## 📈 Correlation with Survival
+## 🛠 Tech Stack
 
-| Feature | Correlation |
-| ------- | ----------- |
-| Fare    | +0.257      |
-| Pclass  | -0.338      |
-| Age     | -0.065      |
-| SibSp   | -0.035      |
-| Parch   | +0.082      |
-
----
-
-## 🧠 Modeling Approach
-
-* Data Cleaning & Preprocessing
-* Exploratory Data Analysis (EDA)
-* Feature Engineering
-* Model Training (e.g., Logistic Regression, Random Forest)
-* Model Evaluation
-
----
-
-## 🚀 Technologies Used
-
-* Python
-* Pandas
-* NumPy
-* Matplotlib / Seaborn
-* Scikit-learn
-
----
-
-## 📌 Conclusion
-
-The analysis confirms:
-
-* **Women and first-class passengers had the highest survival probability.**
-* Socio-economic status (class & fare) strongly influenced survival.
-* Family size and age had relatively small impact.
-
-This project demonstrates how structured data analysis can reveal hidden patterns and build meaningful predictive models.
-
----
+Python • Pandas • NumPy • Matplotlib • Scikit-learn
